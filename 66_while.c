@@ -3,13 +3,13 @@
 #include <stdio.h>
 void main()
 {
-    int num, rem, sum = 0;
+    int num, reminder, sum = 0;
     printf("enter a num : ");
-    scanf("%d", &num); // 7645
+    scanf("%d", &num); // 764
     while (num > 0)
     {
-        rem = num % 10;
-        sum = sum + rem; // 6
+        reminder = num % 10;
+        sum = sum + reminder; // 17
         num = num / 10;
     }
     printf("sum of individual digit = %d", sum);

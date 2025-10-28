@@ -3,13 +3,13 @@
 #include <stdio.h>
 void main()
 {
-    int num, rem;
+    int num, r;
     printf("enter a num : ");
-    scanf("%d", &num);//56
+    scanf("%d", &num);//345
     while (num > 0)
     {
-        rem = num % 10;
-        printf("%d\n", rem);
+        r = num % 10;
+        printf("%d\n", r);
         num = num / 10;
     }
 }
