@@ -29,5 +29,5 @@ void main()
         {
             printf("num is not perfact square\n");
         }
-    } while (f == 0);
+    } while (f == 0);119
 }
