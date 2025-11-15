@@ -31,11 +31,33 @@ void greatestNum(int n1, int n2)
         printf("greatest num = %d\n", n2);
     }
 }
-
+void factorial(int num)
+{
+    int fact = 1, i;
+    for (i = 1; i <= num; i++)
+    {
+        fact = fact * i;
+    }
+    printf("factorial of %d = %d\n", num, fact);
+}
+void range(int s, int e)
+{
+    int i;
+    for (i = s; i <= e; i++)
+    {
+        factorial(i);
+    }
+    printf("-----------------------\n");
+}
 void main()
 {
-    greatestNum(12, 67);
-    greatestNum(500, 56);
+
+    range(3, 8);
+    range(1, 5);
+    // factorial(4);
+    // factorial(7);
+    // greatestNum(12, 67);
+    // greatestNum(500, 56);
     // circleArea(4.5);
     // cube(3);
     // cube(2);
