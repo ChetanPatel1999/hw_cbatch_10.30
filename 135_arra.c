@@ -18,7 +18,7 @@ void main()
     printf("\narray even element are : ");
     for (i = 0; i < 5; i++)
     {
-        if (arr[i] % 2 == 0)
+        if (arr[i]%2==0)
         {
             printf("%d ", arr[i]);
         }
