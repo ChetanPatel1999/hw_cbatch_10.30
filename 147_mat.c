@@ -31,5 +31,6 @@ void main()
         }
     }
 
-    printf("sum of matrix element :- %d", sum);
+    printf("sum of matrix element :- %d\n", sum);
+    printf("average of matrix element :- %.2f\n",(float)sum/4);
 }
