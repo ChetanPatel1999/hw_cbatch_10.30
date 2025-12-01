@@ -7,13 +7,13 @@ void main()
     int *ptr, *temp, i, n;
     printf("enter dynamic array length : ");
     scanf("%d", &n); // 5
-    ptr = (int *)malloc(n * sizeof(int));
+    ptr = (int *)calloc(n, sizeof(int));
     temp = ptr;
     printf("enter array elment :\n");
     for (i = 0; i < n; i++)
     {
         scanf("%d", ptr);
-        ptr++; // 420
+        ptr++; // 404
     }
 
     ptr = temp;
@@ -31,7 +31,7 @@ void main()
         sum = sum + *ptr;
         ptr++;
     }
-    printf("sum of dynamic array = %d\n", sum);
+    printf("\nsum of dynamic array = %d\n", sum);
     ptr = temp;
     free(ptr);
 }
