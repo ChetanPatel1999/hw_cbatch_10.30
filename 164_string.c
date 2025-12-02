@@ -1,0 +1,19 @@
+// wap to increase each alphabet by 1 in given string.
+#include <stdio.h>
+void main()
+{
+
+    char name[] = "chetan patel";
+    int i;
+    printf("name = %s\n", name);
+
+    for (i = 0; name[i] != '\0'; i++) // 6
+    {
+        if (name[i] != 32)
+        {
+            name[i] = name[i] + 1;
+        }
+    }
+
+    printf("name = %s\n", name);
+}
