@@ -15,7 +15,7 @@ void main()
             c++;
         }
     }
-
+   
     printf("name = %s\n", name);
     printf("total vovel  = %d\n", c);
 }
