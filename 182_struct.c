@@ -4,7 +4,7 @@ struct mouse
 {
     char color[20];
     int price;
-    float rating;
+    float rating; 
 };
 void main()
 {

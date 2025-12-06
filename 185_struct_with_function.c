@@ -1,15 +1,33 @@
 #include <stdio.h>
 #include <string.h>
-struct mouse
+struct mouseOfHPCompany
 {
     char color[20];
     int price;
     float rating;
 };
+typedef struct mouseOfHPCompany mouse;
+void find_200_above(mouse m[], int n)
+{
+    int c = 0, i;
+    printf("mouese list which price above 200 :\n");
+    for (i = 0; i < n; i++)//1
+    {
+        if (m[i].price > 200)
+        {
+            c++;
+            printf("\nmouse%d info : \n", i + 1);
+            printf("mouse color : %s\n", m[i].color);
+            printf("mouse price : %d\n", m[i].price);
+            printf("mouse rating : %.1f\n", m[i].rating);
+            printf("----------------------------------\n\n");
+        }
+    }
+    printf("total mouse which price above then 200 = %d", c);
+}
 void main()
 {
-    struct mouse m[3];
-    struct mouse m2[3];
+    mouse m[3];
     int i;
     for (i = 0; i < 3; i++) // 2
     {
@@ -31,19 +49,6 @@ void main()
         printf("----------------------------------\n\n");
     }
 
-    int c = 0;
-    printf("mouese list which price above 200 :\n");
-    for (i = 0; i < 3; i++)
-    {
-        if (m[i].price > 200)   
-        {
-            c++;
-            printf("\nmouse%d info : \n", i + 1);
-            printf("mouse color : %s\n", m[i].color);
-            printf("mouse price : %d\n", m[i].price);
-            printf("mouse rating : %.1f\n", m[i].rating);
-            printf("----------------------------------\n\n");
-        }
-    }
-    printf("total mouse which price above then 200 = %d", c);
+    find_200_above(m, 3);
+
 }
