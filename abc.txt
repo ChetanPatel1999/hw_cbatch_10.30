@@ -6,3 +6,4 @@ this is text file
 this is second text inside file
 this is text file
 this is second text inside file
+hello this is string
